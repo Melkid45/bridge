@@ -1,0 +1,41 @@
+@font-face {
+    font-family: 'Song-Reg';
+    src: url(../fonts/songreg.woff);
+    font-weight: 400
+}
+@font-face {
+    font-family: 'Song-Med';
+    src: url(../fonts/songmedium.woff);
+    font-weight: 500
+}
+@font-face {
+    font-family: 'Song-Bold';
+    src: url(../fonts/songbold.woff);
+    font-weight: 600
+}
+@font-face {
+    font-family: 'Adora';
+    src: url(../fonts/adora.woff);
+    font-weight: 400
+}
+@import './reset';
+body{
+    font-family: 'Adora';
+    max-width: 1440px;
+    background: #FDEEE2;
+    margin: 0 auto;
+}
+.element-animation{
+    opacity: 0;
+    transform: translateY(-20px);
+}
+.element-animation.element-show {
+    opacity: 1;
+    transition: all 1.5s;
+    transform: translateY(0%);
+}
+.container{
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+}

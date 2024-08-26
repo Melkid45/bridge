@@ -15,21 +15,14 @@ for (let elm of elements) {
 }
 
 
+
 $('.burger').on('click', function(e){
-    if ($('.header-black').hasClass('active')){
+    if ($('.header').hasClass('active')){
+        $('.header').removeClass('active')
         $('.header-black').removeClass('active')
         $(this).removeClass('active')
     }else{
         $('.header-black').addClass('active')
-        $(this).addClass('active')
-    }
-    
-})
-$('.burger').on('click', function(e){
-    if ($('.header').hasClass('active')){
-        $('.header').removeClass('active')
-        $(this).removeClass('active')
-    }else{
         $('.header').addClass('active')
         $(this).addClass('active')
     }
